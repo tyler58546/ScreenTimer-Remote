@@ -3,25 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F26DAA722D415D100F97DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAA622D415D100F97DCB /* AppDelegate.swift */; };
-		2F26DAA922D415D100F97DCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAA822D415D100F97DCB /* ViewController.swift */; };
+		2F26DAA922D415D100F97DCB /* NoConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAA822D415D100F97DCB /* NoConnectionViewController.swift */; };
 		2F26DAAC22D415D100F97DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F26DAAA22D415D100F97DCB /* Main.storyboard */; };
 		2F26DAAE22D415D200F97DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F26DAAD22D415D200F97DCB /* Assets.xcassets */; };
 		2F26DAB122D415D200F97DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F26DAAF22D415D200F97DCB /* LaunchScreen.storyboard */; };
+		2F26DAE522D567CB00F97DCB /* MyDevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAE422D567CB00F97DCB /* MyDevicesTableViewCell.swift */; };
+		2F26DAE722D56B6F00F97DCB /* MyDevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAE622D56B6F00F97DCB /* MyDevicesTableViewController.swift */; };
+		2F26DAE922D5730100F97DCB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAE822D5730100F97DCB /* Device.swift */; };
+		2F26DAEE22D575AA00F97DCB /* Pods_ScreenTimer_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8D91837F95B913E71AE18B /* Pods_ScreenTimer_Remote.framework */; };
+		2F26DAF222D576C200F97DCB /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F26DAF122D576C200F97DCB /* SwiftHTTP.framework */; };
+		2F26DAF622D6572900F97DCB /* AddTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAF522D6572900F97DCB /* AddTimeTableViewController.swift */; };
+		2F26DAF922D659A500F97DCB /* AddDeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAF822D659A500F97DCB /* AddDeviceTableViewController.swift */; };
+		2F26DAFB22D6E33600F97DCB /* STTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAFA22D6E33600F97DCB /* STTypeTableViewCell.swift */; };
+		2F26DAFD22D6E35B00F97DCB /* STDurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAFC22D6E35B00F97DCB /* STDurationTableViewCell.swift */; };
+		2F26DAFF22D79E1200F97DCB /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DAFE22D79E1200F97DCB /* TextInputTableViewCell.swift */; };
+		2F26DB0222D7A98200F97DCB /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DB0122D7A98200F97DCB /* LoginTableViewController.swift */; };
+		2F26DB0522D7B88A00F97DCB /* MyAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DB0422D7B88A00F97DCB /* MyAccountTableViewController.swift */; };
+		2F26DB0722D7DBF100F97DCB /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26DB0622D7DBF100F97DCB /* RegisterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F26DAA322D415D100F97DCB /* ScreenTimer Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScreenTimer Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F26DAA622D415D100F97DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F26DAA822D415D100F97DCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F26DAA822D415D100F97DCB /* NoConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionViewController.swift; sourceTree = "<group>"; };
 		2F26DAAB22D415D100F97DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F26DAAD22D415D200F97DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F26DAB022D415D200F97DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F26DAB222D415D200F97DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F26DAE422D567CB00F97DCB /* MyDevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDevicesTableViewCell.swift; sourceTree = "<group>"; };
+		2F26DAE622D56B6F00F97DCB /* MyDevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDevicesTableViewController.swift; sourceTree = "<group>"; };
+		2F26DAE822D5730100F97DCB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		2F26DAEA22D5756800F97DCB /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26DAEC22D5756B00F97DCB /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26DAF122D576C200F97DCB /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26DAF522D6572900F97DCB /* AddTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeTableViewController.swift; sourceTree = "<group>"; };
+		2F26DAF822D659A500F97DCB /* AddDeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceTableViewController.swift; sourceTree = "<group>"; };
+		2F26DAFA22D6E33600F97DCB /* STTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTypeTableViewCell.swift; sourceTree = "<group>"; };
+		2F26DAFC22D6E35B00F97DCB /* STDurationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDurationTableViewCell.swift; sourceTree = "<group>"; };
+		2F26DAFE22D79E1200F97DCB /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
+		2F26DB0122D7A98200F97DCB /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		2F26DB0422D7B88A00F97DCB /* MyAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountTableViewController.swift; sourceTree = "<group>"; };
+		2F26DB0622D7DBF100F97DCB /* RegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
+		2F26DB0822D7E06300F97DCB /* ScreenTimer Remote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ScreenTimer Remote.entitlements"; sourceTree = "<group>"; };
+		3A8D91837F95B913E71AE18B /* Pods_ScreenTimer_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenTimer_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48278550ABA2A1B3D540A8B3 /* Pods-ScreenTimer Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenTimer Remote.debug.xcconfig"; path = "Target Support Files/Pods-ScreenTimer Remote/Pods-ScreenTimer Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		C871D1653A3BC75168D06803 /* Pods-ScreenTimer Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenTimer Remote.release.xcconfig"; path = "Target Support Files/Pods-ScreenTimer Remote/Pods-ScreenTimer Remote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F26DAF222D576C200F97DCB /* SwiftHTTP.framework in Frameworks */,
+				2F26DAEE22D575AA00F97DCB /* Pods_ScreenTimer_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,8 @@
 			children = (
 				2F26DAA522D415D100F97DCB /* ScreenTimer Remote */,
 				2F26DAA422D415D100F97DCB /* Products */,
+				DFF96D2DC1ABD9BBAF3BB308 /* Pods */,
+				AEBB31A22BA9A098C538B206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +89,86 @@
 		2F26DAA522D415D100F97DCB /* ScreenTimer Remote */ = {
 			isa = PBXGroup;
 			children = (
+				2F26DB0822D7E06300F97DCB /* ScreenTimer Remote.entitlements */,
 				2F26DAA622D415D100F97DCB /* AppDelegate.swift */,
-				2F26DAA822D415D100F97DCB /* ViewController.swift */,
+				2F26DAA822D415D100F97DCB /* NoConnectionViewController.swift */,
+				2F26DAE122D5675A00F97DCB /* My Devices */,
+				2F26DB0022D7A94F00F97DCB /* Login */,
+				2F26DB0322D7B80400F97DCB /* My Account */,
 				2F26DAAA22D415D100F97DCB /* Main.storyboard */,
 				2F26DAAD22D415D200F97DCB /* Assets.xcassets */,
 				2F26DAAF22D415D200F97DCB /* LaunchScreen.storyboard */,
 				2F26DAB222D415D200F97DCB /* Info.plist */,
 			);
 			path = "ScreenTimer Remote";
+			sourceTree = "<group>";
+		};
+		2F26DAE122D5675A00F97DCB /* My Devices */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DAE422D567CB00F97DCB /* MyDevicesTableViewCell.swift */,
+				2F26DAE622D56B6F00F97DCB /* MyDevicesTableViewController.swift */,
+				2F26DAE822D5730100F97DCB /* Device.swift */,
+				2F26DAF722D6597C00F97DCB /* Add Device */,
+				2F26DAF422D6571300F97DCB /* Add Time */,
+			);
+			path = "My Devices";
+			sourceTree = "<group>";
+		};
+		2F26DAF422D6571300F97DCB /* Add Time */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DAF522D6572900F97DCB /* AddTimeTableViewController.swift */,
+				2F26DAFA22D6E33600F97DCB /* STTypeTableViewCell.swift */,
+				2F26DAFC22D6E35B00F97DCB /* STDurationTableViewCell.swift */,
+				2F26DAFE22D79E1200F97DCB /* TextInputTableViewCell.swift */,
+			);
+			path = "Add Time";
+			sourceTree = "<group>";
+		};
+		2F26DAF722D6597C00F97DCB /* Add Device */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DAF822D659A500F97DCB /* AddDeviceTableViewController.swift */,
+			);
+			path = "Add Device";
+			sourceTree = "<group>";
+		};
+		2F26DB0022D7A94F00F97DCB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DB0122D7A98200F97DCB /* LoginTableViewController.swift */,
+				2F26DB0622D7DBF100F97DCB /* RegisterTableViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F26DB0322D7B80400F97DCB /* My Account */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DB0422D7B88A00F97DCB /* MyAccountTableViewController.swift */,
+			);
+			path = "My Account";
+			sourceTree = "<group>";
+		};
+		AEBB31A22BA9A098C538B206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F26DAF122D576C200F97DCB /* SwiftHTTP.framework */,
+				2F26DAEC22D5756B00F97DCB /* SwiftyJSON.framework */,
+				2F26DAEA22D5756800F97DCB /* SwiftHTTP.framework */,
+				3A8D91837F95B913E71AE18B /* Pods_ScreenTimer_Remote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF96D2DC1ABD9BBAF3BB308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48278550ABA2A1B3D540A8B3 /* Pods-ScreenTimer Remote.debug.xcconfig */,
+				C871D1653A3BC75168D06803 /* Pods-ScreenTimer Remote.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F26DAB522D415D200F97DCB /* Build configuration list for PBXNativeTarget "ScreenTimer Remote" */;
 			buildPhases = (
+				23C5207C33303216F2BD46F5 /* [CP] Check Pods Manifest.lock */,
 				2F26DA9F22D415D100F97DCB /* Sources */,
 				2F26DAA022D415D100F97DCB /* Frameworks */,
 				2F26DAA122D415D100F97DCB /* Resources */,
+				C89146A524E0C3E8022B824E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +205,11 @@
 				TargetAttributes = {
 					2F26DAA222D415D100F97DCB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,13 +244,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23C5207C33303216F2BD46F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenTimer Remote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89146A524E0C3E8022B824E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenTimer Remote/Pods-ScreenTimer Remote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenTimer Remote/Pods-ScreenTimer Remote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenTimer Remote/Pods-ScreenTimer Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F26DA9F22D415D100F97DCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F26DAA922D415D100F97DCB /* ViewController.swift in Sources */,
+				2F26DAFB22D6E33600F97DCB /* STTypeTableViewCell.swift in Sources */,
+				2F26DB0722D7DBF100F97DCB /* RegisterTableViewController.swift in Sources */,
+				2F26DAA922D415D100F97DCB /* NoConnectionViewController.swift in Sources */,
+				2F26DAF922D659A500F97DCB /* AddDeviceTableViewController.swift in Sources */,
+				2F26DAE722D56B6F00F97DCB /* MyDevicesTableViewController.swift in Sources */,
+				2F26DB0222D7A98200F97DCB /* LoginTableViewController.swift in Sources */,
+				2F26DAF622D6572900F97DCB /* AddTimeTableViewController.swift in Sources */,
+				2F26DAFF22D79E1200F97DCB /* TextInputTableViewCell.swift in Sources */,
 				2F26DAA722D415D100F97DCB /* AppDelegate.swift in Sources */,
+				2F26DAE522D567CB00F97DCB /* MyDevicesTableViewCell.swift in Sources */,
+				2F26DAFD22D6E35B00F97DCB /* STDurationTableViewCell.swift in Sources */,
+				2F26DAE922D5730100F97DCB /* Device.swift in Sources */,
+				2F26DB0522D7B88A00F97DCB /* MyAccountTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +447,14 @@
 		};
 		2F26DAB622D415D200F97DCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48278550ABA2A1B3D540A8B3 /* Pods-ScreenTimer Remote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ScreenTimer Remote/ScreenTimer Remote.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8D46U62W6;
 				INFOPLIST_FILE = "ScreenTimer Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +468,14 @@
 		};
 		2F26DAB722D415D200F97DCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C871D1653A3BC75168D06803 /* Pods-ScreenTimer Remote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ScreenTimer Remote/ScreenTimer Remote.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8D46U62W6;
 				INFOPLIST_FILE = "ScreenTimer Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
