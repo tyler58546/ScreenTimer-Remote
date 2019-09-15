@@ -140,6 +140,7 @@ class MyDevicesTableViewController: UITableViewController {
     }
     
     @objc func refresh() {
+        print(login())
         if enableRefresh {
             if let loginKey = getLoginKey() {
                 Device.loadDevices(loginKey: loginKey)
@@ -153,6 +154,7 @@ class MyDevicesTableViewController: UITableViewController {
     
     func login() -> Bool {
         if getLoginKey() != nil {
+            print("LOGIN KEY: \(getLoginKey())")
             HTTP.GET("https://tyler58546.com/st/get-username.php?login=\(getLoginKey() ?? "error")") { response in
                 if response.error != nil {
                     return
@@ -241,7 +243,9 @@ class MyDevicesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(login())
         return data.count
+        
     }
 
     
