@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftHTTP
 
 enum ScreenTimeType:String {
     case new = "new"
@@ -153,6 +153,20 @@ class MyDevicesTableViewController: UITableViewController {
     
     func login() -> Bool {
         if getLoginKey() != nil {
+            HTTP.GET("https://tyler58546.com/st/get-username.php?login=\(getLoginKey() ?? "error")") { response in
+                if response.error != nil {
+                    return
+                }
+                if let str = String(data: response.data, encoding: .utf8) {
+                    DispatchQueue.main.async {
+                        if str == "" {
+                            self.showLoginVC()
+                        }
+                    }
+                } else {
+                    self.showLoginVC()
+                }
+            }
             return true
         } else {
             showLoginVC()

@@ -20,12 +20,12 @@ struct Device {
     static func loadDevices(loginKey:String) {
         HTTP.GET("https://tyler58546.com/st/my-devices.php?key=\(loginKey)") { response in
             
-            if let error = response.error {
+            if response.error != nil {
                 NotificationCenter.default.post(name: Notification.Name("noConnection"), object: nil)
                 return
             }
             if (String(data: response.data, encoding: .utf8) == "") {
-                NotificationCenter.default.post(name: Notification.Name("loginRequired"), object: nil)
+                //NotificationCenter.default.post(name: Notification.Name("loginRequired"), object: nil)
                 return
             }
             
@@ -50,7 +50,7 @@ struct Device {
     static func loadLastPing(deviceID: String, i:Int) {
         HTTP.GET("https://tyler58546.com/st/last-ping.php?key=\(deviceID)") { response in
             if (String(data: response.data, encoding: .utf8) == "") {
-                NotificationCenter.default.post(name: Notification.Name("loginRequired"), object: nil)
+                //NotificationCenter.default.post(name: Notification.Name("loginRequired"), object: nil)
                 return
             }
             do {
