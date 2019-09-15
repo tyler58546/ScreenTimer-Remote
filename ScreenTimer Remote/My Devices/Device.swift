@@ -33,11 +33,13 @@ struct Device {
                 let json:JSON = try JSON(data: response.data)
                 var devices:[Device] = []
                 
-                for n in 0...(json.count - 2) {
-                    devices.append(Device(name: json[String(n)]["name"].string ?? "(Unknown)", timeLeft: nil, lastUpdated: nil, deviceID: json[String(n)]["device"].string ?? "ERROR",id: json[String(n)]["id"].string ?? "error"))
-                        
-                    
+                if json.count > 1 {
+                    print(json.count)
+                    for n in 0...(json.count - 2) {
+                        devices.append(Device(name: json[String(n)]["name"].string ?? "(Unknown)", timeLeft: nil, lastUpdated: nil, deviceID: json[String(n)]["device"].string ?? "ERROR",id: json[String(n)]["id"].string ?? "error"))
+                    }
                 }
+                
                 NotificationCenter.default.post(name: Notification.Name("my_devices"), object: nil, userInfo: ["devices":devices])
             } catch {
                 //json parse error

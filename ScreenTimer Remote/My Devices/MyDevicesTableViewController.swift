@@ -15,7 +15,8 @@ enum ScreenTimeType:String {
 }
 
 class MyDevicesTableViewController: UITableViewController {
-
+    @IBOutlet weak var noDevicesView: UIView!
+    
     var data:[Device] = []
     var incompleteData:[Device] = []
     var timer = Timer()
@@ -52,8 +53,18 @@ class MyDevicesTableViewController: UITableViewController {
     
     @objc func myDevicesHandler(_ notification: Notification) {
         incompleteData = notification.userInfo!["devices"] as! [Device]
-        for i in 0...(incompleteData.count-1) {
-            Device.loadLastPing(deviceID: incompleteData[i].deviceID, i:i)
+        if incompleteData.count > 0 {
+            DispatchQueue.main.async {
+                self.noDevicesView.isHidden = true
+            }
+            for i in 0...(incompleteData.count-1) {
+                Device.loadLastPing(deviceID: incompleteData[i].deviceID, i:i)
+            }
+        } else {
+            //No devices added
+            DispatchQueue.main.async {
+                self.noDevicesView.isHidden = false
+            }
         }
     }
     @objc func lastPingHandler(_ notification: Notification) {
@@ -154,9 +165,10 @@ class MyDevicesTableViewController: UITableViewController {
     }
     
     @objc func showLoginVC() {
-        let vc:UIViewController = (storyboard?.instantiateViewController(withIdentifier: "login"))!
-        
-        present(vc, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let vc:UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "login"))!
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     @objc func noConnection() {
@@ -172,6 +184,7 @@ class MyDevicesTableViewController: UITableViewController {
         
         self.modalPresentationStyle = .formSheet
         self.navigationController?.modalPresentationStyle = .formSheet
+        
         
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
@@ -325,6 +338,7 @@ class GlobalSplitViewController: UISplitViewController, UISplitViewControllerDel
         super.viewDidLoad()
         
         self.delegate = self
+        
     }
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
