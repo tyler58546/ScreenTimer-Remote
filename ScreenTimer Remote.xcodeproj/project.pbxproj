@@ -109,7 +109,6 @@
 				2F26DAE422D567CB00F97DCB /* MyDevicesTableViewCell.swift */,
 				2F26DAE622D56B6F00F97DCB /* MyDevicesTableViewController.swift */,
 				2F26DAE822D5730100F97DCB /* Device.swift */,
-				2F26DAF722D6597C00F97DCB /* Add Device */,
 				2F26DAF422D6571300F97DCB /* Add Time */,
 			);
 			path = "My Devices";
@@ -118,6 +117,7 @@
 		2F26DAF422D6571300F97DCB /* Add Time */ = {
 			isa = PBXGroup;
 			children = (
+				2F26DAF722D6597C00F97DCB /* Add Device */,
 				2F26DAF522D6572900F97DCB /* AddTimeTableViewController.swift */,
 				2F26DAFA22D6E33600F97DCB /* STTypeTableViewCell.swift */,
 				2F26DAFC22D6E35B00F97DCB /* STDurationTableViewCell.swift */,

@@ -21,7 +21,7 @@ class RegisterTableViewController: UITableViewController, UITextFieldDelegate {
         usernameField.delegate = self
         passwordField.delegate = self
         confirmPasswordField.delegate = self
-        
+        self.navigationItem.largeTitleDisplayMode = .never
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {

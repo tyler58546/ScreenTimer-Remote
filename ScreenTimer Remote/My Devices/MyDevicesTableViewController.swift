@@ -183,6 +183,12 @@ class MyDevicesTableViewController: UITableViewController {
     @objc func showLoginVC() {
         DispatchQueue.main.async {
             let vc:UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "login"))!
+            if #available(iOS 13.0, *) {
+                vc.isModalInPresentation = true
+            } else {
+                // Fallback on earlier versions
+            }
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         }
     }
@@ -190,6 +196,12 @@ class MyDevicesTableViewController: UITableViewController {
     @objc func noConnection() {
         let vc:UIViewController = (storyboard?.instantiateViewController(withIdentifier: "noConnection"))!
         DispatchQueue.main.async {
+            if #available(iOS 13.0, *) {
+                vc.isModalInPresentation = true
+            } else {
+                // Fallback on earlier versions
+            }
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: false, completion: nil)
         }
         
